@@ -849,12 +849,12 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 100%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
   max-width: 392px;
-  min-height: 584px;
+  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -862,11 +862,14 @@ img {
   padding: 72px 24px 24px 24px;
 }
 
-@media screen and (min-width: 432px) {
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+/* @media screen and (min-width: 432px) {
   .modal {
     max-height: 584px;
   }
-}
+} */
 
 .modal-btn {
   position: absolute;
@@ -1048,6 +1051,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--accent-color);
