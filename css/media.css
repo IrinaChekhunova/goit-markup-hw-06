@@ -50,6 +50,10 @@
   }
 
   /* ----------HEADER-------------- */
+  .mob-menu,
+  .open-hamburger-btn {
+    display: none;
+  }
   .header-menu {
     display: flex;
     align-items: center;
@@ -95,17 +99,19 @@
 
   .header-soc {
     font-style: normal;
-    display: flex;
+    display: block;
     align-items: center;
     gap: 40px;
     margin-left: auto;
   }
-
+  .header-logo {
+    margin-right: 120px;
+  }
   .header-soc-link {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,6 +201,12 @@
     flex-wrap: nowrap;
     gap: 24px;
   }
+  /* -------------modal------------ */
+  .modal {
+    max-width: 408px;
+    min-height: 584px;
+    padding: 72px 25px 24px 23px;
+  }
 }
 /*!--------------------min-width: 1158px------------------------------------------- */
 /*!--------------------min-width: 1158px------------------------------------------- */
@@ -228,61 +240,10 @@
     margin: 0 auto;
   }
 
-  .header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  }
-
-  .header-container {
-    display: flex;
-    align-items: center;
-    height: 72px;
-  }
-
-  .header-navigation {
-    display: flex;
-    align-items: center;
-  }
-
-  .header-logo {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    margin-right: 76px;
-  }
-
-  .header-logo-dark {
-    color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-logo-dark:is(:hover, :focus) {
-    color: #404bbf;
-  }
-
-  .link {
-    text-decoration: none;
-  }
-
-  .list {
-    list-style-type: none;
-  }
-
   .header-menu {
     display: flex;
     align-items: center;
     gap: 40px;
-  }
-
-  .header-item::after {
   }
 
   .current {
@@ -346,19 +307,12 @@
   .effective {
     padding: 188px 0;
     max-width: 1440px;
-    background: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
   }
-
   /*! -----------peculiarities------------- */
 
   .peculiarities {
@@ -405,15 +359,6 @@
   .products-title {
     min-width: 323px;
     margin: 0 auto;
-    font-family: inherit;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--title-color);
-    margin-bottom: 72px;
   }
 
   .pr-item {
@@ -474,5 +419,35 @@
   }
   .footer-text {
     max-width: 264px;
+  }
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-input {
+    padding-left: 38px;
+  }
+
+  /* --------------Portfolio------------------ */
+  .container-portfolio {
+    padding: 96px 0 120px 0;
+  }
+  .filter-btn-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .project-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  .project-item {
+    margin-left: o;
+    position: relative;
   }
 }
