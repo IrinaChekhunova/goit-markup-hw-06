@@ -103,16 +103,17 @@
   }
 
   .header-soc {
+    display: flex;
+    flex-direction: column;
     font-style: normal;
-    display: block;
     align-items: center;
+    gap: 12px;
   }
 
   .header-logo {
     margin-right: 120px;
   }
   .header-soc-link {
-    display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -327,6 +328,7 @@
     font-style: normal;
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 40px;
     margin-left: auto;
   }
