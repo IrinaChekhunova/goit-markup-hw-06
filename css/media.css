@@ -59,7 +59,8 @@
     align-items: center;
     gap: 40px;
   }
-
+  .header-soc {
+  }
   .header-item::after {
   }
 
@@ -96,18 +97,22 @@
   .header-menu-link:is(:hover, :focus) {
     color: #404bbf;
   }
+  .header-soc-adres {
+    gap: 40px;
+    margin-left: auto;
+  }
 
   .header-soc {
     font-style: normal;
     display: block;
     align-items: center;
-    gap: 40px;
-    margin-left: auto;
   }
+
   .header-logo {
     margin-right: 120px;
   }
   .header-soc-link {
+    display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -174,10 +179,12 @@
 
   /* ---------------------footer-------------------- */
   .footer-window {
-    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .footer {
+    display: flex;
     align-items: baseline;
     justify-content: flex-start;
     gap: unset;
@@ -188,6 +195,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 24px;
+    margin-bottom: 0;
   }
   .footer-logo {
     align-self: start;
@@ -206,8 +214,15 @@
     margin-left: 0;
   }
   .footer-form {
-    flex-wrap: nowrap;
+    display: flex;
     gap: 24px;
+  }
+  .subscribe-text {
+    text-align: start;
+  }
+  .footer-input {
+    width: 264px;
+    margin-bottom: unset;
   }
   /* -------------modal------------ */
   .modal {
@@ -385,8 +400,18 @@
   }
 
   .products-title {
+    justify-content: center;
     min-width: 323px;
     margin: 0 auto;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: 72px;
   }
 
   .pr-item {
@@ -432,18 +457,21 @@
 
   /* ---------------------footer-------------------- */
   .footer-window {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
   .footer {
-    display: flex;
     max-width: 1158px;
   }
+
+  .subscribe-text {
+    text-align: start;
+  }
+
   .footer-container {
     margin-right: 120px;
   }
   .container-social-media {
     margin-right: 80px;
+    justify-content: center;
   }
   .footer-text {
     max-width: 264px;
