@@ -474,6 +474,7 @@
   .container-social-media {
     margin-right: 80px;
     justify-content: center;
+    margin-bottom: 0;
   }
   .footer-text {
     max-width: 264px;
